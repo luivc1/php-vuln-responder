@@ -51,3 +51,7 @@ Or just ask your agent: *"Are my PHP sites affected by PHP2Shell?"* /
 - No exploit code, ever. Verification is by version and backport evidence.
 - Evidence is copied before anything is removed.
 - Only scan systems you own or are authorized to assess.
+
+## License
+
+[MIT](LICENSE) © 2026 Innovatask LLC
