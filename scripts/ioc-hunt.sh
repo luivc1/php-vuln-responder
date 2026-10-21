@@ -119,7 +119,7 @@ show "$TMP/pat" "files matching eval/exec-on-request-input patterns; scope: $sco
 # 4. Persistence: cron, systemd, SSH keys -----------------------------------
 section "4. Persistence changed since $SINCE (cron, systemd, SSH keys)"
 : > "$TMP/persist"
-find /etc/cron* /var/spool/cron /var/spool/cron/crontabs /etc/systemd/system /lib/systemd/system -type f -newermt "$SINCE" 2>/dev/null >> "$TMP/persist"
+find /etc/cron* /var/spool/cron /var/spool/cron/crontabs /etc/systemd/system -type f -newermt "$SINCE" 2>/dev/null >> "$TMP/persist"
 find /root/.ssh /home/*/.ssh /var/www/.ssh -name 'authorized_keys*' -newermt "$SINCE" 2>/dev/null >> "$TMP/persist"
 for u in www-data apache nginx nobody http lsadm; do
   id "$u" >/dev/null 2>&1 && crontab -l -u "$u" 2>/dev/null | grep -v '^#' | grep . | sed "s|^|crontab($u): |" >> "$TMP/persist"
