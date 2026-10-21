@@ -1,0 +1,11 @@
+{
+  "name": "php-vuln-responder",
+  "owner": { "name": "Innovatask LLC" },
+  "plugins": [
+    {
+      "name": "php-vuln-responder",
+      "source": "./",
+      "description": "Scan, patch, verify and check for compromise after critical PHP vulnerabilities (PHP2Shell advisory included)."
+    }
+  ]
+}

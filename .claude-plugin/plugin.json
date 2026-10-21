@@ -1,0 +1,9 @@
+{
+  "name": "php-vuln-responder",
+  "version": "1.0.0",
+  "description": "Scan, patch, verify and check for compromise after critical PHP vulnerabilities (ships with the PHP2Shell CVE-2026-109618/109619 advisory). Read-only scripts, approval-gated changes, bilingual EN/ES client comms.",
+  "author": {
+    "name": "Innovatask LLC"
+  },
+  "keywords": ["php", "security", "vulnerability", "patching", "incident-response", "php2shell", "wordpress"]
+}
