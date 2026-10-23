@@ -52,6 +52,11 @@ Or just ask your agent: *"Are my PHP sites affected by PHP2Shell?"* /
 - Evidence is copied before anything is removed.
 - Only scan systems you own or are authorized to assess.
 
+More responders in this set: [node-vuln-responder](https://github.com/luivc1/node-vuln-responder) ·
+[railway-secrets-responder](https://github.com/luivc1/railway-secrets-responder) ·
+[python-cert-responder](https://github.com/luivc1/python-cert-responder) ·
+[python-vuln-responder](https://github.com/luivc1/python-vuln-responder)
+
 ## License
 
 [MIT](LICENSE) © 2026 Innovatask LLC
